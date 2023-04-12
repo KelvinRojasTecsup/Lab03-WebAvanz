@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Nivel</title>
+  </head>
+  <body id="todo">
+    <div >
+    <h1 id="title">Seleccion de Nivel</h1>
+    
+    <p id="subtitle">Los recibidos son:</p>
+    <ul id="lista" style="list-style: none;">
+      <li>Nombre: <%= nombre %></li>
+      <li>Correo: <%= correo %></li>
+      <li>Curso: <%= curso %></li>
+    </ul>
+    
+
+<form id="for" action="/pago" method="POST">
+  <label for="nivel">Nivel:</label>
+  <input type="checkbox" name="nivel" id="basico" value="basico" checked>Básico
+  <input type="checkbox" name="nivel" id="intermedio" value="intermedio">Intermedio
+  <input type="checkbox" name="nivel" id="avanzado" value="avanzado">Avanzado
+    <br><br>
+    <input id="boton" type="submit" value="Continuar">
+    
+  </form>
+</div>
+  </body>
+</html>
+

@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Metodo de pago</title>
+  </head>
+  <body id="todo">
+    <h1 id="title" >Metodo de pago</h1>
+    <p id="subtitle" >Los datos recibidos son:</p>
+    <ul id="lista" style="list-style: none;">
+      <li>Nombre: <%= nombre %></li>
+      <li>Correo: <%= correo %></li>
+      <li>Curso: <%= curso %></li>
+      <li>Nivel: <%= nivel %></li>
+      <li>Costo: S/.<%= costo %></li>
+    </ul>
+    <form id="for" action="/datos" method="POST">
+    <label for="nivel"> <b> Forma de pago:</b></label> 
+    
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="pago" value="tarjeta" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault1">
+          Tarjeta de credito
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pago" value="efectivo" id="flexRadioDefault2" >
+        <label class="form-check-label" for="flexRadioDefault2">
+          Efectivo
+        </label>
+        
+      </div>
+      <br>
+      <input id="boton" type="submit" value="Confirmar">
+    </form>
+
+  </body>
+</html>
